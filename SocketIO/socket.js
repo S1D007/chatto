@@ -26,7 +26,7 @@ function setupSocketIO(server, port = 4000) {
     });
   });
 
-  io.listen(port);
+  io.listen(process.env.PORT);
   console.log(`Socket.IO server listening on port ${port}`);
 }
 
